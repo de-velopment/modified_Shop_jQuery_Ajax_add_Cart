@@ -59,6 +59,12 @@ $('.spinner').html('<img src="templates/<?php echo CURRENT_TEMPLATE ?>/img/ajax-
 					$('.spinner').html('<img src="templates/<?php echo CURRENT_TEMPLATE ?>/img/ajax-success.gif" width="32" height="32" /><span>im Warenkorb</span>');
 					//Fade out spinner
 					$('.spinner').delay(1500).fadeOut();
+					
+					//BOF seoss change2015-09-09 Time 01:11 PM
+					//Reset Input Fields
+					$('#cart_quantity').each(function(){
+	                    this.reset();
+	                    });
 						
 
 						
