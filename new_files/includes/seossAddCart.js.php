@@ -12,7 +12,7 @@
 
 $(document).ready(function(){ 
  
-    $("#cart_quantity").submit(function(event){ //user clicks form submit button
+    $("#ajax_cart_quantity").submit(function(event){ //user clicks form submit button
   
           
 		event.preventDefault();
