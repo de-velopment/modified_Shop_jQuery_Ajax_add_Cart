@@ -137,6 +137,11 @@ if (!is_object($product) || !$product->isProduct()) {
   }
 
   // form tags
+  //BOF seoss change2015-09-16 Time 11:15 AM
+  //ID name changed
+ // $info_smarty->assign('FORM_ACTION', xtc_draw_form('cart_quantity', xtc_href_link(FILENAME_PRODUCT_INFO, xtc_get_all_get_params(array ('action')).'action=add_product')));
+    $info_smarty->assign('FORM_ACTION', xtc_draw_form('ajax_cart_quantity', xtc_href_link(FILENAME_PRODUCT_INFO, xtc_get_all_get_params(array ('action')).'action=add_product')));
+    //EOF
   $info_smarty->assign('FORM_END', '</form>');
 
   //products formated price
